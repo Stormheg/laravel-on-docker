@@ -1,0 +1,24 @@
+# Ignore everything
+**
+
+# Allowed files
+!composer.json
+!composer.lock
+!artisan
+!/app/**
+!/bootstrap/**
+!/config/**
+!/database/**
+!/public/**
+!/resources/**
+!/routes/**
+!/storage/**
+
+# Except these files/folders
+bootstrap/cache/services.php
+bootstrap/cache/packages.php
+storage/app/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*

@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - APP_KEY=base64:kZfQYiqWAxE05kZo9NbCcR9f7BLE2PBreNWFD3l8NvY=
+      - APP_DEBUG=true
+      - APP_URL=http://localhost:8080/
+      - APP_ENV=local
+      - LOG_CHANNEL=errorlog
+      - DB_CONNECTION=pgsql
+      - DB_HOST=db
+      - DB_DATABASE=postgres
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=supersecretpasswordyoureallyshouldchange
+  db:
+    image: postgres:10.6-alpine
+    volumes:
+      - laravelondocker_postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=supersecretpasswordyoureallyshouldchange
+volumes:
+  laravelondocker_postgres:
