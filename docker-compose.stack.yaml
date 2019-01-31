@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image <YOUR REPOSITORY IMAGE URL e.g. username/image_name:latest>
+    image: <YOUR REPOSITORY IMAGE URL e.g. username/image_name:latest>
     ports:
       - "8080:8080"
     deploy:
