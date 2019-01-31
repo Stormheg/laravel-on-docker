@@ -18,7 +18,7 @@ RUN composer dump-autoload --no-scripts --no-dev --optimize
 
 # START OF THE MAIN CONTAINER
 # Comes with php and nginx preinstalled
-FROM stormheg/nginx-php7-alpine:latest
+FROM stormheg/nginx-php7-alpine:1.2.0
 
 # You can change a limited number of PHP and nginx settings here
 ENV PHP_MEMORY_LIMIT=128m
