@@ -1,4 +1,6 @@
 # Laravel on docker example
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 Example project on how I got Laravel to work on Docker
 
 ## Requirements
